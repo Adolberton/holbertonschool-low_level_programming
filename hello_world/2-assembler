@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -s $FILLE -o FILLE.s
+gcc -S "$FILLE" -o "FILLE.s"
