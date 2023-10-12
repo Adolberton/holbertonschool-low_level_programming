@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -s $FILLE
+gcc -s $FILLE -o FILLE
