@@ -1,12 +1,15 @@
 #include <stdio.h>
-
-int main() { 
-	printf("Taille d'un char : %lu octets\n", sizeof(char));
-	printf("Taille d'un int : %lu octets\n", sizeof(int));
-	printf("Taille d'un float : %lu octets\n", sizeof(float));
-	printf("Taille d'un double : %lu octets\n", sizeof(double));
-	printf("Taille d'un long : %lu octets\n", sizeof(long));
-	printf("Taille d'un long long : %lu octets\n", sizeof(long long));
-	
-	return 0;
+/**
+ * main - Entry point
+ *
+ *Return: Always 0 (Success)
+ */
+int main(void)
+{
+	printf("Size of a char: %d byte(s)\n", sizeof(char));
+	printf("Size of an int: %d byte(s)\n", sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %d byte(s)\n", sizeof(float));
+	return (0);
 }
