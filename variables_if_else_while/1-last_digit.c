@@ -16,15 +16,15 @@ int main(void)
 	modulo = n % 10;
 	if (modulo > 5)
 	{
-	printf("Last digit of %d is %d and is greater than 5", n, modulo);
+	printf("Last digit of %d is %d and is greater than 5\n", n, modulo);
 	}
 	if (modulo == 0)
 	{
-	printf("Last digit of %d is %d and is 0", n, modulo);
+	printf("Last digit of %d is %d and is 0\n", n, modulo);
 	}
 	if (modulo < 6 && modulo != 0)
 	{
-	printf("Last digit of %d is %d and is less than 6 and not 0", n, modulo);
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, modulo);
 	}
 	return (0);
 }
