@@ -5,15 +5,17 @@
  * Description: sdfqdsqsdf
  *
  */
-main(void)
+int main(void)
 {
 	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
 {
-	for (c = "a"; c <= "z"; c++)
 	putchar (c);
 }
 {
-	putchar("\d");
-	return (0);
+	putchar('\n');
 }
+	return (0);
+
 }
