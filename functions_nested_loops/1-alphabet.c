@@ -1,13 +1,17 @@
-#include <stdio.h>
-  /**
-   * main - Entry point
-   * Description: Write a program that prints _putchar
-   * Return: Always 0 (Success)
-   */
-  int main(void)
-  {
-          int i;
-          for (i = 97; i < 123; i++)
-          putchar (i);
-          return (0);
-  }
+#include "main.h"
+
+/**
+ * print_alphabet - Prints alphabet
+ * print_alphabet: Prototype
+ * Return: Always 0 (Success)
+ */
+void print_alphabet(void)
+{
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+	_putchar(c);
+	}
+	_putchar('\n');
+}
