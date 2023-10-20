@@ -2,12 +2,11 @@
 
 /**
  * print_square - returns 1 if character is lowercase else 0
- * @n: edfsgsdf
+ * @size: edfsgsdf
  * Return: 1 if success, else 0.
  */
-void print_square(int n)
+void print_square(int size)
 {
-	int size = 5;
 	int l, h;
 
 	if (size <= 0)
