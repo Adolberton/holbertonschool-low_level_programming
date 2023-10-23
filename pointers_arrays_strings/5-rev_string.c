@@ -11,14 +11,11 @@ void rev_string(char *s)
 	char *end = s;
 	char temp;
 
-	// Trouver la fin de la chaîne
 	while (*end)
 	{
 		++end;
 	}
-	--end; // Reculer d'un caractère pour pointer le dernier caractère
-
-	// Inverser la chaîne
+	--end;
 	while (s < end)
 	{
 		temp = *s;
