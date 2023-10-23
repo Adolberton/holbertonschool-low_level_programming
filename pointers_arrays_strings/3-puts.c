@@ -2,7 +2,6 @@
 
 /**
  *_puts - sdf
- * Return: sqdfqsd
  * @str: sqdqfsqf
  */
 
