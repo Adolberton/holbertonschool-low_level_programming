@@ -1,24 +1,30 @@
 #include "main.h"
 
 /**
-  * rev_string - Prints a string in reverse
-  * @s: The string to print
-  *
-  * Return: void
-  */
+ * rev_string - Prints a string in reverse
+ * @s: The string to print
+ *
+ * Return: void
+ */
 void rev_string(char *s)
 {
-	int c = 0;
+	char *end = s;
+	char temp;
 
-	while (s[c] != '\0')
+	// Trouver la fin de la chaîne
+	while (*end)
 	{
-		c++;
+		++end;
 	}
+	--end; // Reculer d'un caractère pour pointer le dernier caractère
 
-	for (c -= 1; c >= 0; c--)
+	// Inverser la chaîne
+	while (s < end)
 	{
-		_putchar(s[c]);
+		temp = *s;
+		*s = *end;
+		*end = temp;
+		++s;
+		--end;
 	}
-
-	_putchar('\n');
 }
