@@ -1,24 +1,24 @@
 #include "main.h"
 
 /**
- *print_rev - sdf
- * @s: sqdqfsqf
- */
-
+  * print_rev - Prints a string in reverse
+  * @s: The string to print
+  *
+  * Return: void
+  */
 void print_rev(char *s)
 {
-	int total = 0;
+	int c = 0;
 
-	while (s[total] != '\0')
+	while (s[c] != '\0')
 	{
-		s++;
-		total++;
+		c++;
 	}
-	while (total >= 0)
+
+	for (c -= 1; c >= 0; c--)
 	{
-		_putchar(s[total]);
-		total--;
+		_putchar(s[c]);
 	}
+
 	_putchar('\n');
 }
-
