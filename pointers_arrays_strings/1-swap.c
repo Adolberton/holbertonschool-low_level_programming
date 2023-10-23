@@ -1,11 +1,14 @@
 #include "main.h"
 
 /**
- * reset_to_98 - qldjf
- * @n: sqdqfsqf
+ * swap_int - qldjf
+ * @a: sqdqfsqf
+ * @b: qsdfqs
  */
 
-void reset_to_98(int *n)
+void swap_int(int *a, int *b)
 {
-	*n = 98;
+	int A = *a;
+	*a = *b;
+	*b = A;
 }
