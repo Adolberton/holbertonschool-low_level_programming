@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_array - Prints a string in reverse
  * @a: The string to print
@@ -8,10 +8,10 @@
  */
 void print_array(int *a, int n)
 {
-	n = 0;
-	while a[n] != '\0'
+	int i;
+
+	for (i = 0; i < n; n++)
 	{
-		printf("%d", a[n]);
-		n++;
+		printf("%d", a[i]);
 	}
 }
