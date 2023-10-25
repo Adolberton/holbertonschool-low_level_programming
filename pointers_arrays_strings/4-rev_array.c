@@ -9,9 +9,8 @@
 
 void reverse_array(int *a, int n)
 {
-	n = sizeof(a) / 8;
 
-	while (a[n] != *a)
+	while (a[n] >= *a)
 	{
 	_putchar (a[n] + '\0');
 	n--;
