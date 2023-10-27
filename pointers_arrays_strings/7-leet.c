@@ -19,9 +19,11 @@ char *leet(char *str)
 		{
 			if (str[i] == ltr[j])
 			{
-				str[i] = nb[i];
+				str[i] = nb[j];
 			}
+			j++;
 		}
+		i++;
 	}
 	return (str);
 }
