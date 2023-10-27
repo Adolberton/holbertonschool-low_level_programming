@@ -17,7 +17,7 @@ char *cap_string(char *str)
 	{
 		while (sep[j])
 		{
-			if (i == 0)
+			if (i == 0 && j == 0)
 			{
 				str[i] -= 32;
 			}
