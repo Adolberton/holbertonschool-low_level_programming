@@ -12,14 +12,13 @@ char *cap_string(char *str)
 	char sep[] = {' ', '\t', '\n', ',', ';', '.', '!', '?',
 		'"', '(', ')', '{', '}', '\0'};
 
+	if (i == 0)
+	{
+		str[i] -= 32;
+	}
 	while (str[i])
 	{
 		int j = 0;
-
-		if (i == 0)
-		{
-			str[i] -= 32;
-		}
 
 		while (sep[j])
 		{
