@@ -1,48 +1,39 @@
-/*
- * File: 5-sqrt_recursion.c
- * Auth: Brennan D Baraban
- */
-
-#include "holberton.h"
-
-int find_sqrt(int num, int root);
-int _sqrt_recursion(int n);
+#include "main.h"
 
 /**
- * find_sqrt - Finds the natural square root of an inputted number.
- * @num: The number to find the square root of.
- * @root: The root to be tested.
+ * _sqrt - Calculates the integer square root of a number using recursion.
+ * @n: The number for which we want to find the square root.
+ * @i: Auxiliary variable for testing square of numbers.
  *
- * Return: If the number has a natural square root - the square root.
- *         If the number does not have a natural square root - -1.
+ * Return: The integer square root of n, or -1 if it is not an integer.
  */
-int find_sqrt(int num, int root)
+int _sqrt(int n, int i)
 {
-	if ((root * root) == num)
-		return (root);
-
-	if (root == num / 2)
+	if (n < 0)
+	{
 		return (-1);
+	}
+	else if (i * i > n)
+	{
+		return (-1);
+	}
+	else if (i * i == n)
+	{
+		return (i);
+	}
 
-	return (find_sqrt(num, root + 1));
+	return (_sqrt(n, i + 1));
 }
 
 /**
- * _sqrt_recursion - Returns the natural square root of a number.
- * @n: The number to return the square root of.
+ * _sqrt_recursion - Calculate the integer square root
+ * of a number using recursion.
+ * @n: The number for which we want to find the square root.
  *
- * Return: If n has a natural square root - the natural square root of n.
- *         If n does not have a natural square root - -1.
+ * Return: The integer square root of n, or -1 if it is not an integer.
  */
 int _sqrt_recursion(int n)
 {
-	int root = 0;
-
-	if (n < 0)
-		return (-1);
-
-	if (n == 1)
-		return (1);
-
-	return (find_sqrt(n, root));
+	return (_sqrt(n, 1));
 }
+
