@@ -2,25 +2,26 @@
 /**
  * is_prime_recursive - Check if a number is prime using recursion.
  * @n: The number to be checked.
- * @divisor: The current divisor being tested.
+ * @d: The current divisor being tested.
  *
  * Return: 1 if n is prime, 0 otherwise.
  */
-int is_prime_recursive(int n, int divisor)
+
+int is_prime_recursive(int n, int d)
 {
 	if (n <= 1)
 	{
-		return (0); // 0 and 1 are not prime numbers.
+		return (0);
 	}
-	if (divisor == 1)
+	if (d == 1)
 	{
-		return (1); // 2 is a prime number, and n is not divisible by 1.
+		return (1);
 	}
-	if (n % divisor == 0)
+	if (n % d == 0)
 	{
-		return (0); // n is divisible by divisor, not a prime number.
+		return (0);
 	}
-	return (is_prime_recursive(n, divisor - 1));
+	return (is_prime_recursive(n, d - 1));
 }
 
 /**
@@ -29,6 +30,7 @@ int is_prime_recursive(int n, int divisor)
  *
  * Return: 1 if n is prime, 0 otherwise.
  */
+
 int is_prime_number(int n)
 {
 	return (is_prime_recursive(n, n - 1));
