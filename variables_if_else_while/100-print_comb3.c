@@ -6,12 +6,13 @@
  *
  */
 int main(void)
+	int a, b;
 {
-	for (int a = 0 ; a <= 9 ; a++)
+	for (a = 0 ; a <= 9 ; a++)
 {
-	for (int b = a + 1 ; b <= 9 ; b++)
+	for (b = a + 1 ; b <= 9 ; b++)
 {
-	int end = (a * 10 + b);
+	end = (a * 10 + b);
 	putchar('0' + a);
 	putchar('0' + b);
 	if (end < 89)
