@@ -1,3 +1,8 @@
+#ifndef MAIN_H
+#define MAIN_H
+
+/* Contenu de votre fichier d'en-tête */
+
 int _putchar(char c);
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
@@ -26,7 +31,8 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
-/* Recursion */
+
+/* Fonctions de récursion */
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
 int _strlen_recursion(char *s);
@@ -34,3 +40,6 @@ int factorial(int n);
 int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
 int is_prime_number(int n);
+
+#endif
+
