@@ -3,7 +3,7 @@
 /**
  * main - Entry point of the program
  * @argc: The number of command line arguments
- * @argv: An array of strings containing the arguments try
+ * @argv: An array of strings containing the arguments 
  *
  * Return: 0 for success, 1 for error
  */
@@ -27,3 +27,4 @@ int main(int argc, char *argv[])
         }
         printf("%d\n", result);
         return (0);
+}
