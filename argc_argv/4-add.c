@@ -3,7 +3,7 @@
 /**
  * main - Entry point of the program
  * @argc: The number of command line arguments
- * @argv: An array of strings containing the arguments 
+ * @argv: An array of strings containing the arguments
  *
  * Return: 0 for success, 1 for error
  */
@@ -22,9 +22,10 @@ int main(int argc, char *argv[])
 					{
 						printf("Error\n");
 						return (1);
-				}
+					}
 				result += atoi(argv[i]);
 		}
 		printf("%d\n", result);
 		return (0);
+		
 }
