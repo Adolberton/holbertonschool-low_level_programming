@@ -6,7 +6,7 @@
  * @b: Taille de la mémoire à allouer.
  *
  * Return: Un pointeur vers la mémoire allouée.
- *         Si l'allocation échoue, termine le programme avec le code d'erreur 98.
+ * Si l'allocation échoue, termine le programme avec le code d'erreur 98.
  */
 void *malloc_checked(unsigned int b)
 {
