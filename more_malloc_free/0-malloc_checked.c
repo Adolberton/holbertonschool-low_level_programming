@@ -1,6 +1,7 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+
 /**
  * malloc_checked - Alloue de la mémoire et vérifie l'allocation.
  * @b: Taille de la mémoire à allouer.
@@ -10,12 +11,13 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	void *ptr;
+	void *ptr = malloc(b);
 
-	ptr = malloc(b);
 	if (ptr == NULL)
 	{
 		exit(98);
 	}
+
 	return (ptr);
 }
+
