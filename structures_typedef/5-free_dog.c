@@ -4,10 +4,10 @@
 #include "dog.h"
 
 /**
- * free_dog - function that initialize a variable of type struct dog
+ * free_dog - frees dogs.
+ * @d: struct dog.
  *
- * @d: pointer to the structur declared in dog.h
- *
+ * Return: no return.
  */
 void free_dog(dog_t *d)
 {
