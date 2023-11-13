@@ -13,20 +13,20 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *ndog;
-	int lowner, lname, i;
+	int lowner = 0, lname = 0, i;
 
 	ndog = malloc(sizeof(dog_t));
-	if (!(ndog) || !(name) || !(owner))
+	if (ndog == NULL || name == NULL || owner == NULL)
 		return (NULL);
-	while (name)
+	while (name[lname])
 		lname++;
-	while (owner)
+	while (owner[lowner])
 		lowner++;
 	ndog->name = malloc(lname + 1);
-	if (ndog->name != NULL)
+	if (ndog->name == NULL)
 		return (NULL);
 	ndog->owner = malloc(lowner + 1);
-	if (ndog->owner != NULL)
+	if (ndog->owner == NULL)
 		return (NULL);
 	for (i = 0; i < lname; i++)
 		ndog->name[i] = name[i];
