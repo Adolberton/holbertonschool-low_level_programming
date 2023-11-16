@@ -24,10 +24,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		lowner++;
 	ndog->name = malloc(lname + 1);
 	ndog->owner = malloc(lowner + 1);
-	if (ndog->name == NULL || ndog->owner == NULL)
+	if (ndog->name == NULL)
 	{
 		free(ndog->name);
-		free(ndog->owner);
+		return (NULL);
+	}
+	if (ndog->owner == NULL)
+	{
+		free(ndog->name);
 		return (NULL);
 	}
 	for (i = 0; i < lname; i++)
