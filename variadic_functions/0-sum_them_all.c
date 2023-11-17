@@ -1,4 +1,4 @@
-#include "main.h"
+#include "variadic_functions.h"
 
 /**
  * sum_them_all - Calcule la somme de ses paramètres.
