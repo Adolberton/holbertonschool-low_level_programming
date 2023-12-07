@@ -18,12 +18,12 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 
 	new_table->size = size;
-	new_table->array = malloc(sizeof(hash_node_t *) * size);
+	new_table->array = malloc(sizeof(hash_node_t) * size);
 	if (new_table->array == NULL)
 	{
 		free(new_table);
 		return (NULL);
 	}
-	new_table->array[size] = NULL;
+	new_table->array[size - 1] = NULL;
 	return (new_table);
 }
